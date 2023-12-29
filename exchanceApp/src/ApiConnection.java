@@ -20,7 +20,7 @@ public class ApiConnection {
             String bugununTarihi = bugun.format(formatter);
             double curValue = 0;
             try {
-                URL apiUrl = new URL("https://evds2.tcmb.gov.tr/service/evds/series=TP.DK." + cur1 + ".A.YTL&startDate=" + bugununTarihi + "&endDate=" + bugununTarihi + "&type=json&key=1XT21TgOLo");
+                URL apiUrl = new URL("https://evds2.tcmb.gov.tr/service/evds/series=TP.DK." + cur1 + ".A.YTL&startDate=" + bugununTarihi + "&endDate=" + bugununTarihi + "&type=json&key=XXXXXX");//Buraya Api Key Gelecek
                 HttpURLConnection connect = (HttpURLConnection) apiUrl.openConnection();
                 if (connect.getResponseCode() != 200) {
                     throw new RuntimeException("An server error: " + connect.getResponseCode());
@@ -47,7 +47,7 @@ public class ApiConnection {
             String bugununTarihi = bugun.format(formatter);
             double curValue = 0;
             try {
-                URL apiUrl = new URL("https://evds2.tcmb.gov.tr/service/evds/series=TP.DK." + cur1 + ".A.YTL&startDate=" + bugununTarihi + "&endDate=" + bugununTarihi + "&type=json&key=1XT21TgOLo");
+                URL apiUrl = new URL("https://evds2.tcmb.gov.tr/service/evds/series=TP.DK." + cur1 + ".A.YTL&startDate=" + bugununTarihi + "&endDate=" + bugununTarihi + "&type=json&key=XXXXXX");//Buraya api key gelecek
                 HttpURLConnection connect = (HttpURLConnection) apiUrl.openConnection();
                 if (connect.getResponseCode() != 200) {
                     throw new RuntimeException("An server error: " + connect.getResponseCode());
